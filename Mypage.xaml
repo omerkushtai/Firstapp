@@ -3,14 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Firstapp.Mypage">
     <VerticalStackLayout>
-        <Label FontSize="48"
-            Text="Welcome to .NET MAUI!"
-            TextColor="CadetBlue"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-            <Label
-                FontSize="56"
-                />
-
+        <Button Text="next" Clicked="Onchangephoto"/>
+        <Image x:Name="photoImage"/>
+        <Button Text="previous" Clicked="Onchangephoto"/>
     </VerticalStackLayout>
 </ContentPage>
