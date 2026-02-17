@@ -9,6 +9,6 @@ public partial class App : Application
 
 	protected override Window CreateWindow(IActivationState? activationState)
 	{
-		return new Window(new Mypage());
+		return new Window(new Codepage());
 	}
 }

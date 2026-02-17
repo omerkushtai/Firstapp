@@ -2,6 +2,27 @@ namespace Firstapp;
 
 public partial class Mypage : ContentPage
 {
+        private Button initbtn()
+		{
+			Button button = new Button()
+			{
+				Text = "next",
+			};
+			button.Clicked += Onchangephoto;
+			return button;
+		}
+        private Image initImage()
+		{
+			Image image = new Image()
+			{
+				Name = "photoImage",
+				Aspect = Aspect.AspectFit,
+				
+			};
+			return image;
+		}
+        
+
 	List<String>photos=new List<String>();
 	int currentIndex=0;
 	public Mypage()
